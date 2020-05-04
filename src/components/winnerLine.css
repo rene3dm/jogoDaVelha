@@ -1,0 +1,32 @@
+.line  {
+    position: absolute;
+    stroke: var(--player-cl);
+    stroke-width:0.1em;
+    stroke-dashoffset: 200;
+    stroke-dasharray: 200;
+    z-index: 10;
+    stroke-opacity:0.92;
+    animation: line-draw 2s forwards;
+ }
+ 
+ @keyframes line-draw {
+   to {
+     stroke:var(--text-cl);
+     stroke-dashoffset: 0;
+   
+     
+   }
+ }
+ 
+ .line line {
+
+   animation: line-steps 3s 1s reverse linear infinite;
+ }
+ 
+ @keyframes line-steps {
+   to {
+     stroke-dashoffset: 0;
+     stroke-dasharray: 5;
+     
+   }
+ }

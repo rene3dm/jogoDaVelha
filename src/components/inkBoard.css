@@ -1,0 +1,42 @@
+.svg-board {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(100vmin);
+    animation: path-blur .5s forwards ;
+
+}
+
+.svg-board path {
+    fill: var(--player-cl);
+    stroke:var(--player-cl);
+    stroke-opacity: 0.65;
+    animation: path-color 2s forwards linear;
+}
+
+@keyframes path-color {
+    to{
+        fill: var(--text-cl);
+        stroke:var(--text-cl);
+    }
+}
+
+@keyframes path-color-reset {
+    to{
+        fill: var(--text-cl);
+        stroke:var(--text-cl);
+    }
+}
+
+
+@keyframes path-blur {
+    to{
+        filter: blur(0vmin);
+    }
+}
+@keyframes path-blur-reset {
+    to{
+        filter: blur(0vmin);
+    }
+}

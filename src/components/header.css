@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-color: var(--header-bg);
+    /* background-color: transparent; */
+}
+
+.title {
+    font-family: 'CovesBold';
+    font-size: 6.5vmin;
+    color: var(--title-cl);
+}

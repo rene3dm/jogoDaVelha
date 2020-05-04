@@ -1,0 +1,45 @@
+
+
+
+.score-board{
+    font-family: 'CovesLight';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82vmin;
+    margin: 4vh 0 1vh 0;
+}
+
+.score-board label {
+    display: flex;
+    align-items: center;
+    font-size: 5vmin;
+    color: var(--text-cl);
+}
+
+
+
+.icon-x {
+    font-size: 5vmin;
+    color: var(--player-cl);
+    stroke: var(--player-cl);
+    stroke-width: 5.0;
+    fill-opacity: 1;
+    stroke-opacity: .65;
+    margin: 0 0.2em 
+}
+
+.icon-o {
+    font-size: 4.5vmin;
+    color: var(--player-cl);
+    stroke: var(--player-cl);
+    stroke-width: 5.0;
+    fill-opacity: 1;
+    stroke-opacity: .65;
+    margin: 0 0.4em 
+}
+
+
+
+
+

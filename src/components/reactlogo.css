@@ -1,0 +1,14 @@
+.react-logo {
+    width: 2.8vmin;
+    height: 2.8vmin;
+    fill: var(--title-cl);
+    stroke: var(--title-cl);
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(359deg)
+    } 
+
+}

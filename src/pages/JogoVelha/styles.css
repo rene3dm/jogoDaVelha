@@ -1,0 +1,48 @@
+:root {
+    --body-bg: #f9f9f9;
+    --header-bg: #079afc;
+    --title-cl: #fdfdfd;
+    --player-cl:#079afc;
+    --text-cl:#333;
+    --button-bg: #e8e8e8;
+}
+
+ 
+
+
+@font-face {
+    font-family: 'CovesBold';
+    src: url('../../assets/CovesBold.otf');
+}
+
+@font-face {
+    font-family: 'CovesLight';
+    src: url('../../assets/CovesLight.otf');
+}
+
+/* .title {
+    font-family: 'CovesBold';
+} */
+
+
+
+
+
+.body{
+    display:grid;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-areas: 'header' 'main' 'footer';
+    background-color: var(--body-bg);
+    box-sizing: border-box;
+    height: 100vh;
+
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+

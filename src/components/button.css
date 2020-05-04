@@ -1,0 +1,65 @@
+.button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* border: solid 1px rgb(255, 0, 0); */
+    width: 18vh;
+    height: 18vh;
+    max-width: 24vmin;
+    max-height: 24vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+}
+.button:active {
+    background-color:transparent;
+}
+/* button:active {
+    background-color:#eee;
+} */
+
+.player1 {
+    font-size: 20vmin;
+    color: var(--player-cl);
+    stroke: var(--player-cl);
+    stroke-width: 5.0;
+    fill-opacity: 0;
+    stroke-opacity: .65;
+    max-width: 75%;
+    max-height: 75%;
+    animation: fill-in 0.3s 0.5s forwards;
+}
+
+.player2 {
+  font-size: 16vmin;
+  color: var(--player-cl);
+  stroke: var(--player-cl);
+  stroke-width: 5.0;
+  fill-opacity: 0;
+  stroke-opacity: .65;
+  max-width: 75%;
+  max-height: 75%;
+  animation: fill-in 0.3s 0.5s forwards;
+}
+
+.button svg path {
+  stroke-dashoffset: 2000;
+   stroke-dasharray: 2000;
+  animation: player-draw 1s forwards;
+}
+
+@keyframes player-draw {
+  to {
+    stroke-dashoffset: 0;
+  
+    
+  }
+}
+
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+}
